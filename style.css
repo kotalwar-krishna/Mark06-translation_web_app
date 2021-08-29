@@ -15,35 +15,40 @@
 } */
 
 
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
+
+
+/* actula */
+@import url('https://fonts.googleapis.com/css2?family=Kaisei+Tokumin:wght@400;700&display=swap');
+
+:root {
+    --primary-color: #FBBF24;
+    --black: #333333;
+}
 
 * {
     box-sizing: border-box;
 }
 
-:root {
-    --primary: #F2C94C;
-    --black: #333333;
-    --width-break:600px
+body {
+    color: var(--black);
 }
 
-body {
-    margin: 0;
-    font-family: 'Kalam', cursive;
-    color: #333333;
-}
+/* navigation */
 
 nav {
-    background-color: var(--primary);
+    background-color: var(--primary-color);
     text-align: center;
+    font-size: 3rem;
+    padding: 1rem;
 }
 
-main {
+/* input*/
+
+.main {
     margin: auto;
     padding: 1rem;
-    max-width: var(--width-break);
+    max-width: 800px;
 }
-
 textarea {
     box-sizing: border-box;
     display: block;
@@ -51,38 +56,42 @@ textarea {
     min-height: 20vh;
     margin-top: 2rem;
     font-size: large;
-    font-family: inherit;
 }
 
 button {
-    background-color: var(--primary);
+    background-color: var(--primary-color);
     border: none;
+    border-radius: 0.5rem;
     margin: 1rem 0rem;
     padding: 1rem 2rem;
-    font-family: 'Kalam', cursive;
     font-size: large;
 }
 
-
-#translate-output {
+#output {
     box-sizing: border-box;
     width: 100%;
     min-height: 10vh;
     max-height: 20vh;
     overflow:scroll;
     border: 1px solid var(--black);
+    padding: 1rem; 
+    font-size: large;
 }
 
 footer {
-    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 1rem;
-    background-color: var(--primary);
+    background-color: var(--primary-color);
     text-align: center;
 }
 
+footer div{
+    font-size: 2rem;
+    padding-bottom: 20px;
+}
+
 footer p {
-    max-width: var(--width-break);
+    max-width: 80%
     margin: auto;
 }
