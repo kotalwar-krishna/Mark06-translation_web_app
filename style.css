@@ -45,9 +45,9 @@ nav {
 /* input*/
 
 .main {
-    margin: auto;
-    padding: 1rem;
-    max-width: 800px;
+    margin: 0px auto;
+    padding: 0.5rem;
+    max-width: 600px;
 }
 textarea {
     box-sizing: border-box;
@@ -62,7 +62,7 @@ button {
     background-color: var(--primary-color);
     border: none;
     border-radius: 0.5rem;
-    margin: 1rem 0rem;
+    margin: 0.5rem 0rem;
     padding: 1rem 2rem;
     font-size: large;
 }
@@ -79,6 +79,7 @@ button {
 }
 
 footer {
+    position: fixed;
     bottom: 0;
     width: 100%;
     padding: 1rem;
@@ -87,11 +88,11 @@ footer {
 }
 
 footer div{
-    font-size: 2rem;
-    padding-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
 }
 
 footer p {
-    max-width: 80%
+    max-width: 600px;
     margin: auto;
 }
